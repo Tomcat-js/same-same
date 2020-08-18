@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Show Page</h1>
+
+    <form action="/show" method="get">
+    <button>New Field</button>
+    </form>
+
+    <img class="img_one" src="<%= sticker1.original_still.url %>" alt="" />
+    <img class="img_one_moving display_none <%=searchQuery1%>" src="<%= sticker1.original.url %>" alt="" />
+    <img class="img_two" src="<%= sticker2.original_still.url %>" alt="" />
+    <img class="img_two_moving display_none" src="<%= sticker2.original.url %>" alt="" />
+    <img class="img_three" src="<%= sticker3.original_still.url %>" alt="" />
+    <img class="img_three_moving display_none" src="<%= sticker3.original.url %>" alt="" />
+    <img class="img_four <%= matchingQuery %>" src="<%= sticker4.original.url %>" alt="" />
+    
+
+    <script src="app.js"></script>
+
+</body>
+</html>
