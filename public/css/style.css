@@ -1,11 +1,197 @@
+
+/* https://unsplash.com/@aridley88 */
+
 body {
-    /* background-color: black; */
+    background-image: url("/css/images/wallpaper.jpg");
+    background-size: contain;
+}
+
+.title {
+    font-size: 2rem;
+    background-color: #414a4c;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: inset 0px 22px 30px 0px rgba(0,0,0,0.46);
+    color: whitesmoke;
+    margin: 0;
+    animation: bounce;
+    animation-duration: 2s; 
+}
+
+
+.wrapper {
+    margin: 1% 5%;
+    text-align: center;
+    font-family: 'Red Rose', cursive;
+}
+
+main {
+    display: grid;
+    background-image: url("/css/images/img_wall2.jpg");
+    border-radius: 25px;
+}  
+
+/* https://unsplash.com/@xen0m0rph */
+
+.three_pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px 25px 0 0;
+    background-image: url("/css/images/img_wall2.jpg");
+    background-size: cover;
+    box-shadow: inset 0px 22px 30px 0px rgba(0,0,0,0.46);
+    padding-top: 10px;
+    height: 400px;
+}
+
+.one_pic {
+    margin: 0 auto;
+    border-radius: 0 0 25px 25px;
+    background-image: url("/css/images/img_wall2.jpg");
+    background-size: cover;
+    box-shadow: inset 0px -12px 30px 0px rgba(0,0,0,0.46);
+    height: 400px;
+    padding-top: 45px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #bcb2aebf
+}
+
+
+
+.winner_pic {
+    margin: 0 auto;
+}
+
+.winner_tag {
+    font-size: 2.65rem;
+    margin: 0;
+}
+
+.blinking{
+    animation:blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: transparent; }
+    60%{    color: red}
+    99%{    color:transparent;  }
+    100%{   color: red;    }
 }
 
 img {
-    width: 300px;
+    width: 200px;
+    height: 350px;
+    margin: 0 auto;
 }
 
 .display_none {
     display: none;
 }
+
+.loser_text {
+    height: 400px;
+    text-align: center;
+    box-shadow: inset 0px 22px 30px 0px rgba(0,0,0,0.46);
+}
+
+.loser_text h1 {
+    padding-top: 180px;
+    font-size: 4rem;
+    animation: zoomIn;
+    animation-duration: 3s; 
+}
+
+.img_one {
+    animation: bounceInLeft;
+    animation-duration: 1.5s; 
+}
+
+.img_one_moving {
+    animation: bounceInLeft;
+    animation-duration: 0.5s; 
+}
+
+.img_two {
+    animation: bounceInDown;
+    animation-duration: 2s; 
+}
+
+.img_two_moving {
+    animation: rubberBand;
+    animation-duration: 1s; 
+}
+
+.img_three {
+    animation: bounceInRight;
+    animation-duration: 2.5s; 
+}
+
+.img_three_moving {
+    animation: bounceInRight;
+    animation-duration: 0.5s; 
+}
+
+.img_four {
+    animation: zoomIn;
+    animation-duration: 2s; 
+}
+
+.loser {
+    animation: fadeIn;
+    animation-duration: 1s; 
+}
+
+@media only screen 
+  and (min-device-width: 668px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .title {
+        font-size: 1em;
+    }
+
+    img {
+        width: 150px;
+        height: 262.5px;
+    }
+
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .title {
+        padding: 0;
+        font-size: 0.7em;
+    }
+
+    img {
+        width: 75px;
+        height: 131px;
+    }
+
+    .three_pics {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 1px;
+    }
+
+    .loser_text h1 {
+        font-size: 2rem;
+    }
+
+    .one_pic {
+        height: 180px;
+    }
+}
+
