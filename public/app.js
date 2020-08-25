@@ -14,6 +14,7 @@ const onePicDiv = document.querySelector('.one_pic');
 const loser = document.querySelector('.loser');
 
 
+
 imgOne.addEventListener('click', () => {
     imgOne.className = 'display_none';
     imgOneMoving.classList.remove('display_none');
@@ -35,7 +36,7 @@ imgOne.addEventListener('click', () => {
         threePics.appendChild(loserText);
         imgFour.classList.add('display_none');
         loser.classList.remove('display_none');
-        loserTag.classList.remove('display_none');
+        
     }
 
 }) 
@@ -60,7 +61,7 @@ imgTwo.addEventListener('click', () => {
         threePics.appendChild(loserText);
         imgFour.classList.add('display_none');
         loser.classList.remove('display_none');
-        loserTag.classList.remove('display_none');
+
     }
 }) 
 
@@ -85,11 +86,9 @@ imgThree.addEventListener('click', () => {
         threePics.appendChild(loserText);
         imgFour.classList.add('display_none');
         loser.classList.remove('display_none');
-        loserTag.classList.remove('display_none');
+  
     }
 }) 
-
-
 
 
 

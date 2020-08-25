@@ -1,5 +1,7 @@
 const express = require('express');
 const axios = require('axios');
+require('dotenv').config()
+
 
 const app = express();
 
@@ -30,7 +32,7 @@ app.get('/show', (req, res) => {
     const searchQuery2 = imageList2[secondRandomIndex];
     const searchQuery3 = imageList3[thirdRandomIndex];
     
-    const API_KEY = 'DtAi5THcL2XoxpaSkcCQf16Id369rZ3q'
+    const API_KEY = process.env.API_KEY;
     let url1 = `https://api.giphy.com/v1/stickers/search?api_key=${API_KEY}&q=${searchQuery1}`
     let url2 = `https://api.giphy.com/v1/stickers/search?api_key=${API_KEY}&q=${searchQuery2}`
     let url3 = `https://api.giphy.com/v1/stickers/search?api_key=${API_KEY}&q=${searchQuery3}`
