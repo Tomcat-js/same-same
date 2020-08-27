@@ -79,7 +79,7 @@ app.get('/show', (req, res) => {
         })     
 
       })).catch(errors => {
-        // react on errors.
+        // I still need to learn how to react on errors.
       })
 
 })
