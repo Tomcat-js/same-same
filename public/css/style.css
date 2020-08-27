@@ -6,6 +6,37 @@ body {
     background-size: contain;
 }
 
+.main_title {
+    height: 400px;
+    font-family: 'Londrina Outline', cursive;
+    border-radius: 25px 25px 0 0;
+}
+
+.main_title h1 {
+    font-size: 9rem;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.down_same {
+    font-family: 'Red Rose', cursive;
+}
+
+.description {
+    padding: 0 15%;
+    background-color: #fff;
+    line-height: normal;
+}
+
+.description_div {
+    margin: 0 auto;
+    border-radius: 0 0 25px 25px;
+    background-image: url("/css/images/img_wall2.jpg");
+    background-size: cover;
+    height: 400px;
+    padding-top: 45px;
+}
+
 .title {
     font-size: 2rem;
     background-color: #414a4c;
@@ -150,6 +181,7 @@ img {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+
     .title {
         font-size: 1em;
     }
@@ -171,6 +203,19 @@ img {
     .title {
         padding: 0;
         font-size: 0.7em;
+    }
+
+    .main_title {
+        height: 200px;
+    }
+
+    .main_title h1 {
+        font-size: 5rem;
+    }
+
+    .description {
+        padding: 0 15%;
+        font-size: 1em;
     }
 
     img {
