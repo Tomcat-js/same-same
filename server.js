@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('axios');
 require('dotenv').config()
 
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -83,8 +84,8 @@ app.get('/show', (req, res) => {
 
 })
 
-app.listen(3000, () => {
-    console.log('server running on port 3000')
+app.listen(port, () => {
+    console.log(`server running on port ${port}`)
 })
 
 
